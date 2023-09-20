@@ -1,9 +1,8 @@
-
 var express = require('express');
 var router = express.Router();
 const userController = require('../UserController/LoginControl')
-const multer  = require('multer')
 
+const multer  = require('multer')
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       cb(null, './public/blog')

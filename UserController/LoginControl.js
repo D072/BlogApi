@@ -129,7 +129,7 @@ async function main(email) {
         })
       }
   }
-  exports.adminLogin = async function (req, res, next) {
+  exports.adminLogin = async function (req, res, next) {  
     try {
       let username = req.body.username;
       let password = req.body.password;
